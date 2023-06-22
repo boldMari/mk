@@ -1,0 +1,340 @@
+:root {
+    --background: #feeeed;
+    --white: #f3f2f2;
+    --one: #c3266f;
+    --two: #ff9595;
+    --black: #54585d;
+    --process: #cd0e67; #9E9E9E;
+}
+
+* { 
+	margin:0px; 
+	padding:0px; 
+	box-sizing: border-box;
+	font-family: system-ui;
+}
+
+body { 
+	background: var(--background);
+}
+.col-div-3{
+	width: 25%; 
+	float: left;
+	margin-left: 2px;
+    margin-right: 10px;
+}
+.col-div-7 { 
+	width: 75%; 
+	float: left;
+}
+.col-div-4 { 
+	width: 35%; 
+	float: left;
+	font-size: 18px;
+}
+.col-div-8 { 
+	width: 65%; 
+	float: left;
+	font-size: 22px;
+}
+.col-div-6 { width: 50%; 
+	float: left; 
+	position: relative;
+}
+.clearfix {
+	clear: both;
+}
+
+.resume-main {
+	width: 1000px;
+	height: 1200px; 
+	background: linear-gradient(var(--one), var(--two));
+	margin: 50px auto;
+	box-shadow:5px 5px 5px 5px #54585d33;
+}
+
+.left-box {
+	width: 35%; 
+	float: left; 
+	height: 1000px;
+}
+.right-box {
+	width: 65%; 
+	float: left; 
+	background-color: var(--white); 
+	height: 1000px;
+	margin: 50px 0px; 
+	border-radius: 50px 0px 0px 50px; 
+	padding:30px 50px;
+	box-shadow: -7px 2px 15px 2px #54585d52;
+}
+
+.profile { 
+	width: 150px; 
+	height: 150px; 
+	border: 3px solid var(--white); 
+	padding: 7px; 
+	border-radius: 50%; 
+	margin: 20px auto;
+}
+
+.profile img {
+	width: 100%; 
+	border-radius: 50%;
+}
+.content-box {    
+	padding: 0px 40px 0px 45px;
+}
+.content-box h2 {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--white); 
+	letter-spacing: 1px; 
+	font-size: 30px;
+}
+.hr1 { 
+	border: none; 
+	height: 1px; 
+	background: var(--white); 
+	margin-top: 3px;}
+.p1 { 
+	font-size: 16px;
+	color: var(--white);
+	letter-spacing: 1px;
+	padding-top: 12px;
+}
+#progress {
+	background: var(--process);
+	border-radius: 13px;
+	height: 8px;
+	width: 100%;
+}
+#progress:after {
+    content: '';
+    display: block;
+    background: var(--white);
+    width: 75%;
+    height: 100%;
+    border-radius: 9px;
+}
+#progress1 {
+	background: var(--process);
+	border-radius: 13px;
+	height: 8px;
+	width: 100%;
+}
+#progress1:after {
+    content: '';
+    display: block;
+    background: var(--white);
+    width: 40%;
+    height: 100%;
+    border-radius: 9px;
+}
+.content-box h3 { 
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-top: 20px;
+    color: white;
+	font-weight: 500;
+}
+.p2 {
+	font-size: 16px; 
+	margin-bottom: 5px; 
+	margin-top: 5px; 
+	color: var(--white);
+}
+.circle {
+	color:var(--white); 
+	font-size: 16px!important; 
+	margin-top: 7px;
+}
+.circle1 {
+	color:var(--process); 
+	font-size: 16px!important; 
+	margin-top: 7px;
+}
+.in {
+	background:var(--white);
+	color: var(--one);
+	padding: 8px;
+	border-radius: 20px; 
+	font-size: 14px!important;
+}
+.inp {
+	color: var(--white); 
+	font-size: 16px;
+}
+.col3 {
+	text-align: center;
+}
+h1 {
+	font-size: 60px; 
+	text-transform: uppercase; 
+	color: var(--black); 
+	line-height: 66px;
+}
+h1 span {
+	color: var(--one);
+}
+.p3 {
+	letter-spacing: 4px;
+	color: #54585d;
+	 font-weight: 500;
+	}
+.heading {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--one); 
+	letter-spacing: 1px; 
+	font-size: 30px;
+}
+.hr2 {
+	border: none; 
+	height: 1px; 
+	background: var(--black); 
+	margin-top: 3px;
+}
+.p5 {
+	font-weight: 700;
+	color: var(--black);
+}
+.span1 {
+	font-size: 14px;
+	color: var(--black);
+}
+
+#myImg {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+	float: left;
+	border-radius: 50%;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  .table {
+	font-size: 16px;
+    margin-top: 10px;
+    color: var(--white);
+    letter-spacing: 1px;
+    padding-top: 10px;
+    color: white;
+	text-align: left;
+}
+
+td {
+	padding-left: 20px;
+}
+  
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 1000px){
+	.modal-content {
+	  width: 100%;
+	}
+
+	.resume-main {
+			width: 100%;
+			height: auto;
+	}
+  
+  .right-box {
+	width: 100%;
+	float: none;
+  }
+
+  .left-box {
+	width: 100%;
+	float: none;
+  }
+
+	#myImg {
+	  float: none;
+	}
+
+	h1 {
+	 	font-size: 40px;
+	}
+
+	.inp {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.p5 {
+		line-height: 24px;
+	}
+	.col-div-4 {
+		font-size: 14px;
+	}
+
+	.col-div-8 {
+		font-size: 18px;
+	}
+  }
